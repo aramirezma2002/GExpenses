@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    background: #02414f;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerP{
+    color: white;
+}
+
+.leftNavDiv{
+    display: flex;
+}
+
+.navImg{
+    margin-right: 5px;
+}
+
+.headerDiv{
+   flex: 1;
+   padding-bottom: 8px;
+}
+
+.headerDiv h2{
+    color: white;
+}
+
+.headerNomUsuari{
+    font-size: 18px;
+    color: white;
+}
+
+.rightNavDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}

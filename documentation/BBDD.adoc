@@ -1,0 +1,8 @@
+
+Diagrama entitat relació de la base de dades.
+
+image::images/e-r.jpg[]
+
+Diagrama de la base de dades.
+
+image::images/bbdd-relacionals.PNG[]

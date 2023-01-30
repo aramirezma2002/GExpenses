@@ -1,0 +1,7 @@
+==== Usuari no registrat
+
+Un usuari no registrat no pot fer res a la nostra aplicació. Per registrar-se hauria d'anar a la pantalla de _<<Registre,Registre>>_.
+
+==== Usuari registrat
+
+Un usuari registrar pot accedir a totes les funcionalitats de la web. Pot crear activitats en la pantalla _<<Home,Home>>_ i crear despeses en la pantalla de <<Activitat, Activitat>>

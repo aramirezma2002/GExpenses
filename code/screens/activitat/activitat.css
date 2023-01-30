@@ -1,0 +1,765 @@
+.mainLeftContainer {
+    min-height: 100%;
+    width: 70%;
+}
+
+.mainRightContainer {
+    min-height: 100%;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.containersMargin {
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 11px;
+    background: linear-gradient(
+        0deg,
+        rgb(45, 168, 196) 20%,
+        rgba(3, 103, 166, 1) 100%
+    );
+}
+
+.activitatMainBody {
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+.activitatContainerHeader {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+.nomActivitat {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.tituloMembers{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: white;
+}
+
+.btn-afegir-activitat {
+    height: 30px;
+    background: #0388a6;
+    background-color: #0388a6;
+    color: #fff;
+    font-family: "Madera W01", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 0px solid #000000;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 9px;
+}
+
+.usuarisContainerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    margin: 0;
+}
+
+.addPersonContainer {
+    display: flex;
+}
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+}
+
+.sliderPercentage {
+    width: 20% !important;
+}
+
+.despesaDisplayer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.despesaDisplayer:hover> :not(:hover) {
+    opacity: 0.5;
+}
+
+
+
+.memberDisplayer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.despesa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 0px 7px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor:pointer;
+}
+
+.despesa:hover { 
+    rotate: 2deg;
+    box-shadow: 5px 2px 2px black;
+}
+
+.member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    height: 50px;
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+.valor {
+    margin-left: 7px;
+}
+/* Inport-percentage button */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.toggleSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.toggleSlider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.toggleSlider {
+    background-color: #2196F3;
+}
+
+input:focus+.toggleSlider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.toggleSlider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.toggleSlider.round {
+    border-radius: 34px;
+}
+
+.toggleSlider.round:before {
+    border-radius: 50%;
+}
+
+.togglePercentageValueContainer{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.togglePercentageValueText{
+    margin-right: 10px;
+}
+
+.sliderDisplayer{
+    overflow-y: scroll;
+    max-height: 100px;
+}
+.btn-volver{
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.btn-volver:hover{
+    transform-origin: 0% 0%;
+    transform: scale(1.1);
+}
+
+
+/*popUp despesa seleccionada*/
+
+.despesaSelect{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    /*transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;*/
+}
+
+.despesa-container{
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    max-width: 500px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em, 2.5em;
+    /*transform: var(--transform);
+    transition: var(--transition);*/
+}
+
+.despesa-header{
+    background: #0367a6;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.despesa-header .titol{
+    padding: 10px 0px 10px 0px;
+    margin:0;
+}
+
+.despesa-header .subtitulo{
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin:0;
+}
+
+.despesaSelect button  {
+    box-sizing: border-box;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 12px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+    border-radius: 10px;
+    margin: 7px;
+}
+
+.containerUsers{
+    overflow-y:scroll;
+    min-height: 200px;
+    max-height: 300px;
+    margin: 20px;
+}
+
+.despesa-margin{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.userDespesaSelect{
+    width: 70%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+    background-color: #025E73;
+    color: white; 
+}
+
+.precioDespesaSelect{
+    display: flex;
+    justify-content: flex-end;  
+    width: 30%; 
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    /*border: 0.5px solid black;*/
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;  
+    background-color: #049dbf;
+    color: white; 
+}
+
+.despesa-show{
+    opacity: 1;
+    pointer-events: unset;
+    /*transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .5s .5s;*/
+}
+
+.despesa-header,
+.despesaSelect p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.despesa-header a{
+    margin: auto;
+}
+
+
+.btns-activitat{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns-activitat button{
+    width: 200px;
+    background-color: #0367A6;
+    color: white;
+}
+
+.btns-activitat button:hover{
+    width: 200px;
+    background-color: #049dbf;
+    color: white;
+}
+
+
+/*POPUP INVITACION*/
+
+.invitacionMembers{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    /*transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;*/
+}
+
+.invitacionMembers-container{
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    max-width: 800px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em, 2.5em;
+    /*transform: var(--transform);
+    transition: var(--transition);*/
+}
+
+.invitacionMembers-header{
+    background: #0367a6;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.invitacionMembers-header .titol{
+    padding: 10px 0px 10px 0px;
+    margin:0;
+}
+
+.invitacionMembers-header .subtitulo{
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin:0;
+}
+
+
+.invitacionMembers-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.invitacionMembers-form p {
+    margin: 50px 0px;
+    padding: 12px;
+}
+
+.invitacionMembers-margin{
+    margin: 30px;
+}
+
+.invitacionMembers-show{
+    opacity: 1;
+    pointer-events: unset;
+    /*transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .5s .5s;*/
+}
+
+.invitacionMembers-header,
+.invitacionMembers p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.invitacionMembers-header a{
+    margin: auto;
+}
+
+.invitacionMembers input, .invitacionMembers select{
+    box-sizing: border-box;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+    border-radius: 10px;
+}
+
+.btnsMembers{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnsMembers input[type="button"]{
+    width: 200px;
+    background-color: #049dbf;
+    color: white;
+}
+
+
+.btnsMembers input[type="button"]:hover{
+    width: 200px;
+    background-color: #0367A6;
+    color: white;
+}
+
+
+.btnsMembers input[type="submit"] {
+    width: 200px;
+    background-color: #0367a6;
+    color: white;
+}
+
+.btnBalance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*POPUP INVITACION*/
+
+.balance{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    /*transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;*/
+}
+
+.balance-container{
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    max-width: 1100px;
+    max-height: 95%;
+    border-radius: 6px;
+    padding: 3em, 2.5em;
+    /*transform: var(--transform);
+    transition: var(--transition);*/
+}
+
+.balance-header{
+    background: #0367a6;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.balance-header .titol{
+    padding: 10px 0px 10px 0px;
+    margin:0;
+}
+
+.balance-header .subtitulo{
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin:0;
+}
+
+
+.balance-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.balance-margin{
+    margin: 30px;
+}
+
+.balance-show{
+    opacity: 1;
+    pointer-events: unset;
+    /*transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .5s .5s;*/
+}
+
+.balance-header,
+.balance p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.balance-header a{
+    margin: auto;
+}
+
+.balance button, .balance select{
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+    border-radius: 10px;
+}
+
+.btnNoClick{
+    pointer-events: none;
+}
+
+.infoBalance{
+    width: 98%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.tituloBalance{
+    display: flex;
+    width: 100%;
+    color:#025E73;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.tituloB{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.graficaBalance{
+    width: 55%;
+    height: 350px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    overflow-y: scroll;
+    max-height: 350px;
+}
+
+.zonaVerde{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.zonaRoja{
+    width: 50%;
+    background-color: white;
+}
+
+.zonaNegra{
+    width: 0.25%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.barraGraficaVerde{
+    background-color: green;
+    margin-top: 5px;
+    height: 41px;
+}
+
+.barraGraficaRojo{
+    background-color: red;
+    margin-top: 5px;
+    height: 41px;
+}
+
+.nomValorRojo{
+    margin-left: 5px;
+}
+
+.nomValorVerde{
+    margin-right: 5px;
+}
+
+.textoBalance{
+    background-color: #025E73 ;
+    width: 45%;
+    height: 350px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7px;
+    overflow-y: scroll;
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+
+.infoDeutes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    margin:7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.movimiento{
+    transition: .3s;
+}
+
+.movimiento:hover{
+    rotate: 1deg;
+    box-shadow: 5px 2px 2px black;
+}
+
+.tachado{
+    text-decoration:line-through;
+    opacity: 0.5;
+    color: red;
+}
+
+.hiddenBalanceSelector{
+    display: none;
+}
+
+.btn-afegirBalance {
+    height: 43px;
+    background: #0388A6;
+    background-color: #0388A6;
+    color: #fff;
+    font-family: "Madera W01", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px 7px;
+    border: 0px solid #000000;
+    display: inline-block;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 9px;
+}
+
+.btn-afegirBalance:hover {
+    background: #0367a6;
+    background-color: #0367a6;
+}
+
+.balanceTimer{
+    cursor: progress;
+    pointer-events: none;
+    background: #819195;
+    background-color: #708489;
+}
+
+
+
+
+
+
+

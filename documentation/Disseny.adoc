@@ -1,0 +1,64 @@
+=== Sketchup 
+Sketchup del landpage i del login:
+
+image::images/sketching.jpg[]
+
+Sketchup de la plantilla:
+
+image::images/skecthup_plantilla.jpg[]
+
+Sketchups:
+
+image::images/todo.jpg[]
+
+
+
+=== Wiframes
+Wiframe de Login:
+
+image::images/loginwiframe.PNG[]
+
+Wiframe de Land page:
+
+image::images/land_page.PNG[]
+
+Wiframe de registre:
+
+image::images/registrer.PNG[]
+
+Wiframe de plantilla:
+
+image::images/wiframe_plantilla.jpg[]
+
+Wiframe del home:
+
+image::images/wiframe_home.jpg[]
+
+
+=== Mockup 
+
+Mockup de Login:
+
+image::images/Login.jpg[]
+
+Mockup de LandPage:
+
+image::images/landind_page.jpg[]
+
+Mockup de Registrer: 
+
+image::images/registrer.jpg[]
+
+Mockup Home:
+
+image::images/moqup-home.PNG[]
+
+Mockup Plantilla:
+
+image::images/moqup-plantilla.jpg[]
+
+
+
+
+
+

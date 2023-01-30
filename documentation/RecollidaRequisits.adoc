@@ -1,0 +1,9 @@
+S'ens va demanar dues coses:
+
+- Que sigui fácil d'utilitzar
+- Feta amb:
+1. JavaScript
+2. PHP
+3. HTML
+4. CSS
+5. Vagrant

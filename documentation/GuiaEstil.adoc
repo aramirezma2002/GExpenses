@@ -1,0 +1,37 @@
+Hem escollit aquesta paleta de colors
+    
+image::images/palete-color.jpeg[]
+
+Com a tipografia hem escollit "Madera W01".
+
+image::images/estilo-colorTexto.PNG[]
+
+Icon de l'usuari
+
+image::../code/recursos/img/usuario.png[]
+
+Icon del logo
+
+image::../code/recursos/img/presupuesto(1).png[]
+
+Logo
+
+image::images/logo-blanco.png[]
+
+== Botons
+
+ Color: #049DBF
+
+== Footer 
+
+ Width: 100%
+
+ Height: 40px
+
+ Color: #02414f
+
+== Header:
+
+ Width: 50%
+
+ Color:  #02414f

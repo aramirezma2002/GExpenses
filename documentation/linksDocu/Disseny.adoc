@@ -1,0 +1,53 @@
+=== Mockup 
+En el nostre Mockup hem fet la pantalla de login, la pantalla de login en el cas de que la sessió sigui incorrecte i un esbós de la landpage. La landpage també està feta en html/css.
+
+Mockup de Login:
+
+image::../recursos/img/Login.jpg[]
+
+
+Mockup de LandPage:
+
+image::../../code/recursos/img/landind_page.jpg[]
+
+
+Mockup de Registrer: 
+
+image::../recursos/img/registrer.jpg[]
+
+
+=== Sketchup 
+Hem fet esbosos del landpage i del login.
+
+image::../recursos/img/sketching.jpg[]
+
+
+=== Wiframes
+Wiframe de Login
+
+image::../recursos/img/login.PNG[]
+
+Wiframe de Land page
+
+image::../recursos/img/land_page.PNG[]
+
+Wiframe de registre
+
+image::../recursos/img/registrer.PNG[]
+
+
+=== Layout LandPage
+
+Aquesta seria la pagina de benvinguda.
+
+image::../recursos/img/layout-landpage.PNG[]
+
+
+=== Icones 
+
+Icon de l'usuari
+image::../../code/recursos/img/usuario.png[]
+
+Logo
+image::../../code/recursos/img/logo-blanco.png[]
+
